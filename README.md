@@ -1,2 +1,2 @@
-# dotfiles
+# tomassvoboda's dotfiles
 My dotfiles
