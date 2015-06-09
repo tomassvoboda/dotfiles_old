@@ -1,0 +1,11 @@
+[user]
+	name = Tomáš Svoboda
+	email = tomassvoboda@zoho.com
+[credential]
+	helper = cache
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	lg = log --oneline --decorate --all --graph

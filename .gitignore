@@ -1,4 +1,9 @@
 # Everything
-*
+/*
 
 # Except this:
+## Gitignore
+!.gitignore
+## Settings
+### git global configuration file
+!.gitconfig
