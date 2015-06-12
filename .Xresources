@@ -6,6 +6,9 @@
 Xft.dpi:        96
 Xft.antialias:  true
 Xft.rgba:       rgb
+Xft.lcdfilter:  lcddefault
+
+Xft.autohint:   false
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
@@ -15,27 +18,27 @@ URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
 URxvt.fading:               0
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
+! Handle bell character
+URxvt.visualBell:           true
+URxvt.urgentOnBell:         true
+! URxvt as login shell
 URxvt.loginShell:           true
-URxvt.saveLines:            50
-URxvt.internalBorder:       3
-URxvt.lineSpace:            0
+! Padding around terminal text
+URxvt.internalBorder:       4
 
 ! Fonts
 URxvt.allow_bold:           true
 URxvt*font:                 xft:Monaco:pixelsize=13
 URxvt*boldFont:             xft:Monaco:bold:pixelsize=13
 
-! Fix font space
-URxvt*letterSpace:          -1
+! Font space - distance between characters
+URxvt.letterSpace:          -1
 
-! MY - Urxvt history limit
-urxvt.saveLines:            1000000
-
+! Number of lines saved in scrollback bufer
+URxvt.saveLines:            65535
 
 ! Scrollbar
-URxvt.scrollStyle:          rxvt
+URxvt.scrollStyle:          plain
 URxvt.scrollBar:            false
 
 ! Perl extensions
@@ -43,9 +46,9 @@ URxvt.perl-ext-common:      default,matcher
 URxvt.matcher.button:       1
 URxvt.urlLauncher:          firefox
 
-! Cursor
+! Make cursor blinking and underline
 URxvt.cursorBlink:          true
-URxvt.cursorUnderline:      false
+URxvt.cursorUnderline:      true
 
-! Pointer
+! Blank the pointer when moving or after inactivity
 URxvt.pointerBlank:         true
