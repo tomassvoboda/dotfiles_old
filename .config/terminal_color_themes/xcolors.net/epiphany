@@ -1,0 +1,22 @@
+! name: Epiphany
+! author: 
+! foreground and background colors
+#ffffff
+#000000
+! basic 16 colors (from 0 to 15)
+#565656
+#ac4f4f
+#88ab77
+#d0d9ad
+#677088
+#cdcdb4
+#445362
+#ffffff
+#656565
+#e85555
+#8ccd6c
+#c5d67d
+#647396
+#cdb4c9
+#505b6c
+#c0c0c0

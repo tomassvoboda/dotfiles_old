@@ -7,3 +7,10 @@
 ## Settings
 ### git global configuration file
 !.gitconfig
+
+### terminal color themes
+!/bin
+!/.config
+/.config/*
+!/.config/terminal_color_themes
+!/.config/terminal_colors

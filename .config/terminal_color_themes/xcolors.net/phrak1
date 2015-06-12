@@ -1,0 +1,22 @@
+! name: Phrak1
+! author: 
+! foreground and background colors
+#a8a8a8
+#000000
+! basic 16 colors (from 0 to 15)
+#000000
+#a80000
+#00a800
+#a85400
+#0000a8
+#a800a8
+#00a8a8
+#a8a8a8
+#545054
+#f85450
+#50fc50
+#f8fc50
+#5054f8
+#f854f8
+#50fcf8
+#f8fcf8

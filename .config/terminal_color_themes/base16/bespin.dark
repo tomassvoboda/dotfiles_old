@@ -1,0 +1,22 @@
+! name: Bespin (dark)
+! author: Chris Kempson
+! foreground and background colors
+#8a8986
+#28211c
+! basic 16 colors (from 0 to 15)
+#28211c
+#cf6a4c
+#54be0d
+#f9ee98
+#5ea6ea
+#9b859d
+#afc4db
+#8a8986
+#666666
+#cf6a4c
+#54be0d
+#f9ee98
+#5ea6ea
+#9b859d
+#afc4db
+#baae9e

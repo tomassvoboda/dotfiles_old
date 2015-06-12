@@ -1,0 +1,22 @@
+! name: Invisibone
+! author: Baskerville
+! foreground and background colors
+#A0A0A0
+#232323
+! basic 16 colors (from 0 to 15)
+#303030
+#D370A3
+#6D9E3F
+#B58858
+#6095C5
+#AC7BDE
+#3BA275
+#CFCFCF
+#686868
+#FFA7DA
+#A3D572
+#EFBD8B
+#98CBFE
+#E5B0FF
+#75DAA9
+#FFFFFF

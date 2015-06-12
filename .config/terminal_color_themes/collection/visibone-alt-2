@@ -1,0 +1,22 @@
+! name: Visibone Alt. 2
+! author: Gutterslob
+! foreground and background colors
+#CCCCCC
+#333333
+! basic 16 colors (from 0 to 15)
+#666666
+#CC6699
+#99CC66
+#CC9966
+#6699CC
+#9966CC
+#66CC99
+#CCCCCC
+#999999
+#FF99CC
+#CCFF99
+#FFCC99
+#99CCFF
+#CC99FF
+#99FFCC
+#FFFFFF

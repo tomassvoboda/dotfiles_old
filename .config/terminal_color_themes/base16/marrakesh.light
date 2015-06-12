@@ -1,0 +1,22 @@
+! name: Marrakesh (light)
+! author: Chris Kempson
+! foreground and background colors
+#5f5b17
+#faf0a5
+! basic 16 colors (from 0 to 15)
+#201602
+#c35359
+#18974e
+#a88339
+#477ca1
+#8868b3
+#75a738
+#948e48
+#6c6823
+#c35359
+#18974e
+#a88339
+#477ca1
+#8868b3
+#75a738
+#faf0a5

@@ -1,0 +1,22 @@
+! name: Grayscale (dark)
+! author: Chris Kempson
+! foreground and background colors
+#b9b9b9
+#101010
+! basic 16 colors (from 0 to 15)
+#101010
+#7c7c7c
+#8e8e8e
+#a0a0a0
+#686868
+#747474
+#868686
+#b9b9b9
+#525252
+#7c7c7c
+#8e8e8e
+#a0a0a0
+#686868
+#747474
+#868686
+#f7f7f7

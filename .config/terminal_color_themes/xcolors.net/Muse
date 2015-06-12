@@ -1,0 +1,22 @@
+! name: Muse
+! author: 
+! foreground and background colors
+#ffffff
+#000000
+! basic 16 colors (from 0 to 15)
+#2e3436
+#a31604
+#447241
+#c1951a
+#425387
+#965d98
+#06989a
+#d3d7cf
+#555753
+#c60001
+#27a343
+#d5a30e
+#4a5a8d
+#893c8c
+#12bccb
+#eeeeec

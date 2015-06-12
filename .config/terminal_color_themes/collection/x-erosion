@@ -1,0 +1,22 @@
+! name: X::Erosion
+! author: earsplit
+! foreground and background colors
+#BEA492
+#181512
+! basic 16 colors (from 0 to 15)
+#332D29
+#8C644C
+#746C48
+#908A66
+#646A6D
+#605655
+#4B5C5E
+#504339
+#817267
+#9F7155
+#857B52
+#9C956E
+#71777A
+#656565
+#556D70
+#9A875F

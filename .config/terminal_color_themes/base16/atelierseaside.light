@@ -1,0 +1,22 @@
+! name: Atelierseaside (light)
+! author: Chris Kempson
+! foreground and background colors
+#5e6e5e
+#f0fff0
+! basic 16 colors (from 0 to 15)
+#131513
+#e6193c
+#29a329
+#c3c322
+#3d62f5
+#ad2bee
+#1999b3
+#8ca68c
+#687d68
+#e6193c
+#29a329
+#c3c322
+#3d62f5
+#ad2bee
+#1999b3
+#f0fff0

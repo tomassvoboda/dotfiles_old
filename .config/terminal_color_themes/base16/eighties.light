@@ -1,0 +1,22 @@
+! name: Eighties (light)
+! author: Chris Kempson
+! foreground and background colors
+#515151
+#f2f0ec
+! basic 16 colors (from 0 to 15)
+#2d2d2d
+#f2777a
+#99cc99
+#ffcc66
+#6699cc
+#cc99cc
+#66cccc
+#d3d0c8
+#747369
+#f2777a
+#99cc99
+#ffcc66
+#6699cc
+#cc99cc
+#66cccc
+#f2f0ec

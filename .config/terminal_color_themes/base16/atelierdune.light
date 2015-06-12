@@ -1,0 +1,22 @@
+! name: Atelierdune (light)
+! author: Chris Kempson
+! foreground and background colors
+#6e6b5e
+#fefbec
+! basic 16 colors (from 0 to 15)
+#20201d
+#d73737
+#60ac39
+#cfb017
+#6684e1
+#b854d4
+#1fad83
+#a6a28c
+#7d7a68
+#d73737
+#60ac39
+#cfb017
+#6684e1
+#b854d4
+#1fad83
+#fefbec

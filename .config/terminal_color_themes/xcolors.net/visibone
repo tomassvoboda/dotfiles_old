@@ -1,0 +1,22 @@
+! name: VisiBone
+! author: 
+! foreground and background colors
+#ffffff
+#000000
+! basic 16 colors (from 0 to 15)
+#666666
+#cc6666
+#66cc99
+#cc9966
+#6699cc
+#cc6699
+#66cccc
+#cccccc
+#999999
+#ff9999
+#99ffcc
+#ffcc99
+#99ccff
+#ff99cc
+#99ffff
+#ffffff

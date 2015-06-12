@@ -1,0 +1,22 @@
+! name: tlh
+! author: 
+! foreground and background colors
+#66ff66
+#101010
+! basic 16 colors (from 0 to 15)
+#1c1c1c
+#d81860
+#60ff60
+#f9fd75
+#4695c8
+#a78edb
+#43afce
+#f3ebe2
+#4d4d4d
+#f00060
+#70ff70
+#f9fd80
+#5a9dc8
+#b29fdb
+#69b8ce
+#eeeeee

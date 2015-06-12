@@ -1,0 +1,22 @@
+! name: Color Star
+! author: dkeg
+! foreground and background colors
+#d3d3d3
+#000000
+! basic 16 colors (from 0 to 15)
+#03010f
+#503b43
+#353b64
+#8c2424
+#6067ac
+#624d19
+#7c83c0
+#9a600f
+#ab9e9e
+#b28930
+#bbada9
+#c37305
+#d0ae58
+#d7b559
+#f4e199
+#f6f4df

@@ -1,0 +1,22 @@
+! name: Count Von Count
+! author: Baskerville
+! foreground and background colors
+#919191
+#000000
+! basic 16 colors (from 0 to 15)
+#303030
+#c10023
+#a83334
+#b51d2c
+#8c4b46
+#7d534f
+#9a413d
+#c6c6c6
+#5e5e5e
+#ff8781
+#ffa095
+#ff948b
+#feb2aa
+#ebbbb5
+#ffaaa0
+#ffffff

@@ -1,0 +1,22 @@
+! name: Londontube (light)
+! author: Chris Kempson
+! foreground and background colors
+#5a5758
+#ffffff
+! basic 16 colors (from 0 to 15)
+#231f20
+#ee2e24
+#00853e
+#ffd204
+#009ddc
+#98005d
+#85cebc
+#d9d8d8
+#737171
+#ee2e24
+#00853e
+#ffd204
+#009ddc
+#98005d
+#85cebc
+#ffffff
