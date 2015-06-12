@@ -7,10 +7,14 @@
 ## Settings
 ### git global configuration file
 !.gitconfig
+### ZSH config file
+!.zshrc
 
-### terminal color themes
+### folder with custom scripts
 !/bin
+
 !/.config
 /.config/*
+### terminal color themes
 !/.config/terminal_color_themes
 !/.config/terminal_colors
