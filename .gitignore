@@ -7,8 +7,11 @@
 ## Settings
 ### git global configuration file
 !.gitconfig
+
 ### ZSH config file
 !.zshrc
+### X resource file
+!.Xresources
 
 ### folder with custom scripts
 !/bin
