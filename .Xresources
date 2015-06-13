@@ -1,5 +1,5 @@
 ! Xresources file
-#include "./.config/terminal_colors"
+#include "./.config/base16-xresources/base16-solarized.dark.256.xresources"
 
 ! Xft settings ---------------------------------------------------------------
 
@@ -19,12 +19,11 @@ URxvt.geometry:             90x30
 URxvt.transparent:          false
 URxvt.fading:               0
 ! Handle bell character
-URxvt.visualBell:           true
 URxvt.urgentOnBell:         true
 ! URxvt as login shell
 URxvt.loginShell:           true
 ! Padding around terminal text
-URxvt.internalBorder:       4
+URxvt.internalBorder:       10
 
 ! Fonts
 URxvt.allow_bold:           true

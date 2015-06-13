@@ -8,10 +8,12 @@
 ### git global configuration file
 !.gitconfig
 
-### ZSH config file
-!.zshrc
 ### X resource file
 !.Xresources
+### ZSH config file
+!.zshrc
+### vim config file
+!.vimrc
 
 ### folder with custom scripts
 !/bin

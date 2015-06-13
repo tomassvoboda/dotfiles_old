@@ -47,14 +47,14 @@ bindkey '^[[6~' down-line-or-history
 bindkey '^[[A' up-line-or-search
 bindkey '^[[D' backward-char
 bindkey '^[[B' down-line-or-search
-bindkey '^[[C' forward-char 
+bindkey '^[[C' forward-char
 # for rxvt
 bindkey "\e[8~" end-of-line
 bindkey "\e[7~" beginning-of-line
 
 PROMPT='%n@%m %~ # '
 
-# color ls output only to terminal and use ISO time format 
+# color ls output only to terminal and use ISO time format
 alias ls="ls --color=auto --time-style=long-iso"
 alias '..'='cd ..'
 alias -g ...='../..'
@@ -69,3 +69,7 @@ alias count='wc -l'
 
 # Add ~/bin to PATH for scripting
 export PATH="$PATH:$HOME/bin"
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-solarized.dark.sh"
+ [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
