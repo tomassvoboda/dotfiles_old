@@ -21,6 +21,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 
+"i3 Syntax highlight
+Plug 'PotatoesMaster/i3-vim-syntax'
+
 call plug#end()
 
 " User interface --------------------------------------------------------------

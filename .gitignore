@@ -23,3 +23,8 @@
 ### terminal color themes
 !/.config/terminal_color_themes
 !/.config/terminal_colors
+
+### beets configuration file
+!/.config/beets
+/.config/beets/*
+!/.config/beets/config.yaml
