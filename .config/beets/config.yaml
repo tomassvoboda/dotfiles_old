@@ -23,7 +23,7 @@ ui:
                 text_success: green
                 text_warning: yellow
                 text_error: red
-                text_highlight: red
+                text_highlight: darkgreen
                 text_highlight_minor: lightgray
                 action_default: turquoise
                 action: blue
@@ -42,10 +42,9 @@ import:
 # path format configuration
 # ------------------------------------------------------------------------------
 paths:
-        #        default: $albumartist/$album%aunique{}/$disc-$track $title
         default: %asciify{$albumartist}/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
-        comp: Compilations/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
         albumtype:soundtrack: OST/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
+        comp: Compilations/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
 
 # plugin options
 # ------------------------------------------------------------------------------
@@ -53,16 +52,29 @@ paths:
 # ftintitle     - featured artists are in song title
 # replaygain    - normalizes audio playback levels
 # scrub         - remove all tags that are not tracked by beets
+# zero          - clear fields in metadata tags
 # mpdupdate     - update MPD library after changes
 # info          - print file metadata
+# convert       - export transcoded audio to a different directory
 
-plugins: mbsync ftintitle replaygain scrub mpdupdate info
+plugins: mbsync ftintitle replaygain scrub zero mpdupdate info convert
 
 ftintitle:
-        format: featuring {0}
+        format: (featuring {0})
 replaygain:
         overwrite: yes
         backend: gstreamer
+zero:
+        fields: month day genre comments images
 mpd:
         host: localhost
         port: 6600
+convert:
+        copy_album_art: yes
+        dest: ~/Downloads/trans
+        embed: no
+        format: mp3
+        formats:
+                mp3:
+                        command: ffmpeg -i $source -vn -aq 0 $dest
+                        extension: mp3
