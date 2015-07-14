@@ -1,5 +1,5 @@
 ! Xresources file
-#include "./.config/base16-xresources/base16-solarized.dark.256.xresources"
+#include "./.config/base16-xresources/base16-flat.dark.256.xresources"
 
 ! Xft settings ---------------------------------------------------------------
 

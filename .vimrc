@@ -36,7 +36,7 @@ let base16colorspace=256
 
 " Set theme and background color
 set background=dark
-colorscheme base16-solarized
+colorscheme base16-flat
 
 " Word wrap
 set wrap

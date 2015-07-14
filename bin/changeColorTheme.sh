@@ -4,7 +4,14 @@
 THEME_NAME=$1
 
 # Use dark or light colors
-BACKGROUND="dark"
+read -r -p "Use [D]ark or [L]ight theme variant? " response
+response=${response,,}    # tolower
+if [[ $response =~ ^(l)$ ]]
+then
+  BACKGROUND="light"
+else
+  BACKGROUND="dark"
+fi
 
 #Change .Xresources
 sed -i "/^#include \".\/.config\/base16-xresources/c\#include \".\/.config\/base16-xresources\/base16-$THEME_NAME\.$BACKGROUND\.256.xresources\"" ~/.Xresources
