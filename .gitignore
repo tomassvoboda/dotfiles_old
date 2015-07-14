@@ -15,6 +15,9 @@
 ### vim config file
 !.vimrc
 
+### lftp config file
+!.lftprc
+
 ### folder with custom scripts
 !/bin
 
