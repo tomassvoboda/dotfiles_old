@@ -9,3 +9,5 @@
 	ui = true
 [alias]
 	lg = log --oneline --decorate --all --graph
+[push]
+	default = simple

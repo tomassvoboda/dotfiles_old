@@ -3,7 +3,7 @@
 
 # global options
 directory: ~/Data/Music
-library: ~/.config/beets/library.db
+library: ~/Data/Music/! Metadata/library.db
 replace:
         '[\\/]': _              # remove /, \
         '^\.': _                # remone leading dots
@@ -36,7 +36,7 @@ import:
         resume: no              # interrupted imports are not resumed
         incremental: yes        # import only new files in directory
         timid: yes              # ask for confirmation on every autotagging match
-        log: ~/.config/beets/import.log
+        log: ~/Data/Music/! Metadata/import.log
         languages: en           # prefer english translations of names
 
 # path format configuration
@@ -72,6 +72,8 @@ mpd:
 convert:
         copy_album_art: yes
         dest: ~/Downloads/trans
+        paths:
+                default: "%asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}"
         embed: no
         format: mp3
         formats:
