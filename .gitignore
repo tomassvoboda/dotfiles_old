@@ -18,8 +18,10 @@
 ### lftp config file
 !.lftprc
 
-### folder with custom scripts
 !/bin
+/bin/*
+### Change base16 theme for Xorg, urxvt, vim
+!/bin/changeColourTheme
 
 !/.config
 /.config/*
