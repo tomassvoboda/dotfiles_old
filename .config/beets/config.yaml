@@ -71,7 +71,7 @@ mpd:
         port: 6600
 convert:
         copy_album_art: yes
-        dest: ~/Downloads/trans
+        dest: ~/Data/Music - Phone
         paths:
                 default: "%asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}"
         embed: no
