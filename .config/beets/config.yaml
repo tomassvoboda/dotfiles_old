@@ -48,7 +48,8 @@ paths:
 
 # plugin options
 # ------------------------------------------------------------------------------
-# mbsync        - update already written metadata
+# fetchart      - retrieves album art images from various sources
+# embedart      - embed album art into metadata
 # ftintitle     - featured artists are in song title
 # replaygain    - normalizes audio playback levels
 # scrub         - remove all tags that are not tracked by beets
@@ -57,8 +58,12 @@ paths:
 # info          - print file metadata
 # convert       - export transcoded audio to a different directory
 
-plugins: mbsync ftintitle replaygain scrub zero mpdupdate info convert
-
+plugins: fetchart embedart ftintitle replaygain scrub zero mpdupdate info convert
+fetchart:
+        auto: no
+        sources: []
+embedart:
+        auto: no
 ftintitle:
         format: (featuring {0})
 replaygain:
@@ -70,10 +75,10 @@ mpd:
         host: localhost
         port: 6600
 convert:
-        copy_album_art: yes
         dest: ~/Data/Music - Phone
         paths:
-                default: "%asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}"
+                default: %asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}
+        copy_album_art: yes
         embed: no
         format: mp3
         formats:
