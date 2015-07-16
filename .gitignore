@@ -21,7 +21,9 @@
 !/bin
 /bin/*
 ### Change base16 theme for Xorg, urxvt, vim
-!/bin/changeColourTheme
+!/bin/changeColorTheme
+### Print terminal color combinations
+!/bin/colortest
 
 !/.config
 /.config/*
