@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Change permissions for everything in a specified directory
+# Every directory to	rwx------
+# Every file to		rw-------
+
+read -r -p "Change the permissions for the folder $1? (y/N) " response
+response=${response,,}    # tolower
+if [[ $response =~ ^(y)$ ]]
+then
+  # Directories
+  find $1 -type d -exec chmod 700 {} \;
+  # Files
+  find $1 -type f -exec chmod 600 {} \;
+fi
+

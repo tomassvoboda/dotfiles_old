@@ -22,6 +22,8 @@
 /bin/*
 ### Change base16 theme for Xorg, urxvt, vim
 !/bin/changeColorTheme
+### Change permissions recursively
+!/bin/changePermissions
 ### Print terminal color combinations
 !/bin/colortest
 
