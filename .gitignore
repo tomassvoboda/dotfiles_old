@@ -31,6 +31,9 @@
 
 !/.config
 /.config/*
+### compton configuration file
+!/.config/compton.conf
+
 ### terminal color themes
 !/.config/terminal_color_themes
 !/.config/terminal_colors
