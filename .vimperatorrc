@@ -1,0 +1,67 @@
+" Application title bar
+set titlestring="Firefox"
+
+" Keyboard Mappings ------------------------------------------------------------
+" Map backspace to :back
+"noremap b :back <CR>
+"noremap <S-b> :forward <CR>
+
+" Scroll three times as fast
+nnoremap j 3j
+nnoremap k 3k
+nnoremap h 3h
+nnoremap l 3l
+
+" Firefox Settings -------------------------------------------------------------
+" Tracking protection
+set! privacy.donottrackheader.enabled=true
+set! privacy.trackingprotection.enabled=true
+
+" Video playback
+set! media.mediasource.enabled=true
+set! media.mediasource.ignore_codecs=true
+set! media.mediasource.mp4.enabled=true
+set! media.mediasource.webm.enabled=true
+set! media.fragmented-mp4.exposed=true
+set! media.fragmented-mp4.ffmpeg.enabled=true
+set! media.fragmented-mp4.gmp.enabled=true
+
+" No warnings in about:config
+set! general.warnOnAboutConfig=false
+
+" Script -----------------------------------------------------------------------
+" Hide status bar when fullscreen mode is detected
+autocmd Fullscreen .* js updateBottomBar()
+
+" Re-enable bottom bar during certain commands.
+noremap : :js updateBottomBar(false)<CR>:
+noremap o :js updateBottomBar(false)<CR>o
+noremap O :js updateBottomBar(false)<CR>O
+noremap t :js updateBottomBar(false)<CR>t
+noremap T :js updateBottomBar(false)<CR>t
+noremap / :js updateBottomBar(false)<CR>/
+cnoremap <CR> <CR>:js updateBottomBar()<CR>
+cnoremap <Esc> <Esc>:js updateBottomBar()<CR>
+
+:js << EOF
+
+let hlContentSepValue = highlight.get('ContentSeparator').value
+
+function updateBottomBar(close = window.fullScreen) {
+  let bb = document.getElementById('liberator-bottombar')
+  if (! bb) return
+
+  if (close) {
+    bb.style.height = '0px'
+    bb.style.overflow = 'hidden'
+    liberator.execute('highlight ContentSeparator display: none;')
+  }
+  else {
+    bb.style.height = ''
+    bb.style.overflow = ''
+    liberator.execute('highlight ContentSeparator ' + hlContentSepValue)
+  }
+}
+updateBottomBar()
+
+EOF
