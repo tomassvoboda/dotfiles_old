@@ -28,6 +28,8 @@ set! media.fragmented-mp4.gmp.enabled=true
 
 " No warnings in about:config
 set! general.warnOnAboutConfig=false
+" No fullscreen warning for HTML5
+set! full-screen-api.approval-required=false
 
 " Script -----------------------------------------------------------------------
 " Hide status bar when fullscreen mode is detected
