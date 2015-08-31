@@ -317,12 +317,13 @@ def_key "6"
 #def_key "z"
 #  toggle_random
 #
-#def_key "y"
+def_key "y"
+  dummy
 #  save_tag_changes
-#
-#def_key "y"
-#  start_searching
-#
+
+def_key "y"
+  start_searching
+
 #def_key "y"
 #  toggle_single
 #
@@ -386,9 +387,10 @@ def_key "6"
 #def_key "w"
 #  toggle_find_mode
 #
-#def_key "e"
+def_key "e"
+  dummy
 #  edit_song
-#
+
 #def_key "e"
 #  edit_library_tag
 #
