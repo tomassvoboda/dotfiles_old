@@ -5,7 +5,7 @@ alias lla ls -lha
 alias hostls command ls
 
 alias df pget -n 5
-alias dd mirror --parallel=5
+alias dd mirror --parallel=5 --use-pget-n=3
 alias q queue
 
 ## ls output colored
