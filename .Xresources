@@ -1,5 +1,5 @@
 ! Xresources file
-#include "./.config/base16-xresources/base16-flat.dark.256.xresources"
+#include "./.config/base16-xresources/base16-default.dark.256.xresources"
 
 ! Xft settings ---------------------------------------------------------------
 
@@ -41,9 +41,9 @@ URxvt.scrollStyle:          plain
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
-URxvt.matcher.button:       1
-URxvt.urlLauncher:          firefox
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
 
 ! Make cursor blinking and underline
 URxvt.cursorBlink:          true
