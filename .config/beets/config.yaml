@@ -2,8 +2,8 @@
 # ------------------------------------------------------------------------------
 
 # global options
-directory: ~/Data/Music
-library: ~/Data/Music/! Metadata/library.db
+directory: ~/data/music
+library: ~/data/music/!_metadata/library.db
 replace:
         '[\\/]': _              # remove /, \
         '^\.': _                # remone leading dots
@@ -36,15 +36,13 @@ import:
         resume: no              # interrupted imports are not resumed
         incremental: yes        # import only new files in directory
         timid: yes              # ask for confirmation on every autotagging match
-        log: ~/Data/Music/! Metadata/import.log
+        log: ~/data/music/!_metadata/import.log
         languages: en           # prefer english translations of names
 
 # path format configuration
 # ------------------------------------------------------------------------------
 paths:
         default: %asciify{$albumartist}/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
-        albumtype:soundtrack: OST/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
-        comp: Compilations/%asciify{$album}%aunique{albumartist album, year label catalognum albumdisambig}/$disc-$track - %asciify{$title}
 
 # plugin options
 # ------------------------------------------------------------------------------
@@ -58,7 +56,7 @@ paths:
 # info          - print file metadata
 # convert       - export transcoded audio to a different directory
 
-plugins: fetchart embedart ftintitle replaygain scrub zero mpdupdate info convert
+plugins: mbsync fetchart embedart ftintitle replaygain scrub zero mpdupdate info convert
 fetchart:
         auto: no
         sources: []
@@ -75,7 +73,7 @@ mpd:
         host: localhost
         port: 6600
 convert:
-        dest: ~/Data/Music - Phone
+        dest: ~/data/music_converted
         paths:
                 default: %asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}
         copy_album_art: yes
