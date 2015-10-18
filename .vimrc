@@ -36,7 +36,7 @@ let base16colorspace=256
 
 " Set theme and background color
 set background=dark
-colorscheme base16-flat
+colorscheme base16-default
 
 " Word wrap
 set wrap
@@ -141,5 +141,3 @@ set ttimeout
 "set visualbell " nebude nam piskat ale na chvili prebarvi obrazovku
 "set expandtab
 "set tabstop=2
-
-" map  i<html><head><meta charset="UTF-8"></head><body></body></html>[1;5A[1;5Ao
