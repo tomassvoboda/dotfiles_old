@@ -48,3 +48,9 @@
 /.ncmpcpp/*
 !/.ncmpcpp/config
 !/.ncmpcpp/bindings
+
+### GnuPG configuration files
+!/.gnupg
+/.gnupg/*
+!/.gnupg/gpg.conf
+!/.gnupg/gpg-agent.conf
