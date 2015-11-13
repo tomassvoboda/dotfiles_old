@@ -1,4 +1,4 @@
-# The following lines were added by compinstall
+# ZSH config file
 
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -14,13 +14,14 @@ zstyle ':completion:*' prompt 'Number of errors: %e'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle :compinstall filename '/home/tomas/.zshrc'
 
-autoload -Uz compinit
+autoload -U compinit promptinit
 compinit
-# End of lines added by compinstall
+promptinit
+
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 # vim mode
 #bindkey -v
 # End of lines configured by zsh-newuser-install
@@ -67,9 +68,19 @@ alias grep='grep --color=auto'
 alias bc='bc -lq'
 alias count='wc -l'
 
+# Set term
+export TERM=rxvt-unicode-256color
+
+# Sets editor to vim
+export EDITOR='vim'
+
 # Add ~/bin to PATH for scripting
 export PATH="$PATH:$HOME/bin"
 
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# eval `keychain --eval --agents ssh,gpg --quiet --quick id_rsa 94DDFB71A4838600`
+
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-flat.dark.sh"
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL

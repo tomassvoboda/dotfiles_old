@@ -3,6 +3,7 @@ alias ls command cls --time-style=long-iso
 alias ll ls -lh
 alias lla ls -lha
 alias hostls command ls
+alias cf cache flush
 
 alias df pget -n 5
 alias dd mirror --parallel=5 --use-pget-n=3
