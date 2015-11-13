@@ -1,8 +1,6 @@
 [user]
 	name = Tomáš Svoboda
 	email = tomassvoboda@zoho.com
-[credential]
-	helper = cache --timeout=86400
 [core]
 	editor = vim
 [color]
