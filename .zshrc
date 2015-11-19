@@ -79,8 +79,10 @@ export PATH="$PATH:$HOME/bin"
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# eval `keychain --eval --agents ssh,gpg --quiet --quick id_rsa 94DDFB71A4838600`
-
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# Prompt the entry of the GPG and SSH keys passphrases
+eval `keychain --eval --agents ssh --quiet --quick ~/.ssh/id_rsa`
+eval `keychain --eval --agents gpg --quiet --quick 94DDFB71A4838600`
