@@ -31,6 +31,9 @@
 
 !/.config
 /.config/*
+### i3 configuration files
+!/.config/i3
+
 ### compton configuration file
 !/.config/compton.conf
 
