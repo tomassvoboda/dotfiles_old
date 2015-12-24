@@ -68,6 +68,8 @@ alias grep='grep --color=auto'
 alias bc='bc -lq'
 alias count='wc -l'
 
+alias music='ncmpcpp'
+
 # Set term
 export TERM=rxvt-unicode-256color
 
