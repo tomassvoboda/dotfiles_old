@@ -47,10 +47,10 @@
 !/.config/beets/config.yaml
 
 ### ncmpcpp configuration files
-!/.ncmpcpp
-/.ncmpcpp/*
-!/.ncmpcpp/config
-!/.ncmpcpp/bindings
+!/.config/ncmpcpp
+/.config/ncmpcpp/*
+!/.config/ncmpcpp/config
+!/.config/ncmpcpp/bindings
 
 ### GnuPG configuration files
 !/.gnupg
