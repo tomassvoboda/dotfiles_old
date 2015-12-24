@@ -1,0 +1,29 @@
+#!/usr/bin/bash
+
+# write what starting position to use when creating 1st partition on disk
+# all the information from:
+# http://rainbow.chard.org/2013/01/30/how-to-align-partitions-for-best-performance-using-parted/
+
+# read device name as argument (e.g. sda)
+DEVICE=$1
+
+OPT=` cat /sys/block/$1/queue/optimal_io_size`
+MIN=`cat /sys/block/$1/queue/minimum_io_size`
+ALIGN=`cat /sys/block/$1/alignment_offset`
+BLOCK=`cat /sys/block/$1/queue/physical_block_size`
+
+if [ $OPT -eq 0 ]
+then
+  read -r -p "Is this ($MIN) power of 2? [y/N] " response
+  response=${response,,}    # tolower
+  if [[ $response =~ ^(y)$ ]]
+  then
+    echo "Use '1MiB' as the start of the partition, (and '100%' as the end)."
+    exit
+  fi
+fi
+echo "Optimal IO size = $OPT"
+echo "Minimum IO size = $MIN"
+echo "Allignment offset = $ALIGN"
+echo "Physical block size = $BLOCK"
+echo "The values above are weird and I don't know what to do."

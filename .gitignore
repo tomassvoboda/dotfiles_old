@@ -28,6 +28,8 @@
 !/bin/changePermissions
 ### Print terminal color combinations
 !/bin/colortest
+### Find correct pratition alignment for parted
+!/bin/findPartitionAlignment
 
 !/.config
 /.config/*
