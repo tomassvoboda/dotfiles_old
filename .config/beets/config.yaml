@@ -3,7 +3,7 @@
 
 # global options
 directory: ~/data/music
-library: ~/data/music/!_metadata/library.db
+library: ~/data/music/.metadata/beets/library.db
 replace:
         '[\\/]': _              # remove /, \
         '^\.': _                # remone leading dots
@@ -36,7 +36,7 @@ import:
         resume: no              # interrupted imports are not resumed
         incremental: yes        # import only new files in directory
         timid: yes              # ask for confirmation on every autotagging match
-        log: ~/data/music/!_metadata/import.log
+        log: ~/data/music/.metadata/beets/import.log
         languages: en           # prefer english translations of names
 
 # path format configuration

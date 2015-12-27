@@ -22,7 +22,9 @@ set! privacy.trackingprotection.enabled=true
 " No warnings in about:config
 set! general.warnOnAboutConfig=false
 " No fullscreen warning for HTML5
-set! full-screen-api.approval-required=false
+set! full-screen-api.warning.timeout=0
+set! full-screen-api.transition-duration.enter="0 0"
+set! full-screen-api.transition-duration.leave="0 0"
 
 " Script -----------------------------------------------------------------------
 " Hide status bar when fullscreen mode is detected
@@ -43,19 +45,18 @@ cnoremap <Esc> <Esc>:js updateBottomBar()<CR>
 let hlContentSepValue = highlight.get('ContentSeparator').value
 
 function updateBottomBar(close = window.fullScreen) {
-  let bb = document.getElementById('liberator-bottombar')
-  if (! bb) return
-
-  if (close) {
-    bb.style.height = '0px'
-    bb.style.overflow = 'hidden'
-    liberator.execute('highlight ContentSeparator display: none;')
-  }
-  else {
-    bb.style.height = ''
-    bb.style.overflow = ''
-    liberator.execute('highlight ContentSeparator ' + hlContentSepValue)
-  }
+let bb = document.getElementById('liberator-bottombar')
+if (! bb) return
+	if (close) {
+		bb.style.height = '0px'
+		bb.style.overflow = 'hidden'
+		liberator.execute('highlight ContentSeparator display: none;')
+	}
+	else {
+		bb.style.height = ''
+		bb.style.overflow = ''
+		liberator.execute('highlight ContentSeparator ' + hlContentSepValue)
+	}
 }
 updateBottomBar()
 

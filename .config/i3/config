@@ -20,7 +20,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -175,5 +175,11 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 bindsym XF86AudioPrev exec mpc prev
 bindsym XF86AudioNext exec mpc next
+
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 100 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "Helvetica 18"
+
+exec --no-startup-id compton --config ~/.config/compton.conf
+exec feh --bg-scale ~/.wallpaper.jpg
+exec mpd
 
 # vim:filetype=i3
