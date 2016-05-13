@@ -53,7 +53,7 @@ bindkey '^[[C' forward-char
 bindkey "\e[8~" end-of-line
 bindkey "\e[7~" beginning-of-line
 
-PROMPT='%n@%m %~ # '
+PROMPT='%n@%m %~ > '
 
 # color ls output only to terminal and use ISO time format
 alias ls="ls --color=auto --time-style=long-iso"
