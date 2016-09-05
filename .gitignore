@@ -43,6 +43,11 @@
 !/.config/terminal_color_themes
 !/.config/terminal_colors
 
+### mpv configuration file
+!/.config/mpv
+/.config/mpv/*
+!/.config/mpv/mpv.conf
+
 ### beets configuration file
 !/.config/beets
 /.config/beets/*
