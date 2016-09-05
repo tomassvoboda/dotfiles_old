@@ -68,11 +68,14 @@ mpd:
 convert:
         dest: ~/data/music_converted
         paths:
-                default: %asciify{$albumartist} - %asciify{$album} ($year) [MP3 V0]/$disc-$track - %asciify{$title}
+                default: %asciify{$albumartist} - %asciify{$album} ($year) [opus 128k]/$disc-$track - %asciify{$title}
         copy_album_art: yes
         embed: no
-        format: mp3
+        format: opus
         formats:
                 mp3:
                         command: ffmpeg -i $source -vn -aq 0 $dest
                         extension: mp3
+                opus:
+                        command: ffmpeg -n -i $source -vn -acodec libopus -b 128k $dest
+                        extension: opus

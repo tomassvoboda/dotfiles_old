@@ -1,5 +1,6 @@
 ## some useful aliases
 alias ls command cls --time-style=long-iso
+alias l ls
 alias ll ls -lh
 alias lla ls -lha
 alias hostls command ls
