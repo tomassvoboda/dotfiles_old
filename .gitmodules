@@ -1,0 +1,3 @@
+[submodule ".config/startpage"]
+	path = .config/startpage
+	url = https://github.com/tomassvoboda/startpage.git

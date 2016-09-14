@@ -69,3 +69,6 @@
 /.gnupg/*
 !/.gnupg/gpg.conf
 !/.gnupg/gpg-agent.conf
+
+### startpage
+!/.config/startpage
