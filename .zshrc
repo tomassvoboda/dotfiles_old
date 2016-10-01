@@ -14,7 +14,7 @@ zstyle ':completion:*' prompt 'Number of errors: %e'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle :compinstall filename '/home/tomas/.zshrc'
 
-autoload -U compinit promptinit
+autoload -Uz compinit promptinit
 compinit
 promptinit
 
@@ -57,7 +57,7 @@ PROMPT='%n@%m %~ > '
 
 # color ls output only to terminal and use ISO time format
 alias ls="ls --color=auto --time-style=long-iso"
-alias l="ls"
+alias l="ls -1"
 alias '..'='cd ..'
 alias -g ...='../..'
 alias -g ....='../../..'
@@ -80,12 +80,12 @@ export EDITOR='vim'
 # Add ~/bin to PATH for scripting
 export PATH="$PATH:$HOME/bin"
 
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Prompt the entry of the GPG and SSH keys passphrases
-#eval `keychain --eval --agents ssh --quiet --quick ~/.ssh/id_rsa`
+eval `keychain --eval --agents ssh --quiet --quick ~/.ssh/id_rsa ~/.ssh/id_rsa_feral`
 #eval `keychain --eval --agents gpg --quiet --quick 94DDFB71A4838600`
