@@ -36,7 +36,7 @@ let base16colorspace=256
 
 " Set theme and background color
 set background=dark
-colorscheme base16-default
+"colorscheme base16-default
 
 " Word wrap
 set wrap
@@ -81,7 +81,7 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 
 " Airline Theme
-let g:airline_theme='base16'
+"let g:airline_theme='base16'
 
 " Key Bindings ----------------------------------------------------------------
 

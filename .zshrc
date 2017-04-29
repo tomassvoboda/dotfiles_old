@@ -78,7 +78,10 @@ alias music='ncmpcpp'
 export EDITOR='vim'
 
 # Add ~/bin to PATH for scripting
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.cargo/bin"
+export RUST_SRC_PATH="/home/tomas/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
+#export JAVA_HOME="/opt/intellij-jdk"
+#[ -f /home/tomas/.zsh_cargo ] && source /home/tomas/.zsh_cargo
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -87,5 +90,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
  [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Prompt the entry of the GPG and SSH keys passphrases
-eval `keychain --eval --agents ssh --quiet --quick ~/.ssh/id_rsa ~/.ssh/id_rsa_feral`
+eval `keychain --eval --agents ssh --quiet --quick ~/.ssh/id_rsa ~/.ssh/id_rsa_feral ~/.ssh/id_rsa_seedboxes`
 #eval `keychain --eval --agents gpg --quiet --quick 94DDFB71A4838600`
