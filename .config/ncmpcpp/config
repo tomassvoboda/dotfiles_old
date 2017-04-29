@@ -32,7 +32,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 #
 ## Needed for tag editor and file operations to work.
 ##
- mpd_music_dir = ~/data/music
+ mpd_music_dir = ~/Data/music
 #
 #mpd_crossfade_time = 5
 #
@@ -320,9 +320,9 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 ## Note: You can specify third character which will
 ## be used to build 'empty' part of progressbar.
 ##
-#progressbar_look = =>
+progressbar_look = "◾◾◽"
 #
-#progressbar_boldness = yes
+progressbar_boldness = no
 #
 ## Available values: database, playlist.
 ##

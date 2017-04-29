@@ -2,8 +2,8 @@
 # ------------------------------------------------------------------------------
 
 # global options
-directory: ~/data/music
-library: ~/data/music/.metadata/beets/library.db
+directory: ~/Data/Music
+library: ~/Data/Music/.metadata/beets/library.db
 replace:
         '[\\/]': _              # remove /, \
         '^\.': _                # remone leading dots
@@ -36,8 +36,13 @@ import:
         resume: no              # interrupted imports are not resumed
         incremental: yes        # import only new files in directory
         timid: yes              # ask for confirmation on every autotagging match
-        log: ~/data/music/.metadata/beets/import.log
+        log: ~/Data/Music/.metadata/beets/import.log
         languages: en           # prefer english translations of names
+
+match:
+    preferred:
+        countries: ['XE', 'US', 'GB|UK']
+        media: ['CD', 'Digital Media|File']
 
 # path format configuration
 # ------------------------------------------------------------------------------
@@ -66,7 +71,7 @@ mpd:
         host: localhost
         port: 6600
 convert:
-        dest: ~/data/music_converted
+        dest: ~/Data/Music - opus
         paths:
                 default: %asciify{$albumartist} - %asciify{$album} ($year) [opus 128k]/$disc-$track - %asciify{$title}
         copy_album_art: yes
@@ -78,4 +83,4 @@ convert:
                         extension: mp3
                 opus:
                         command: ffmpeg -n -i $source -vn -acodec libopus -b 128k $dest
-                        extension: opus
+                        extension: ogg # thanks to the broken Android MediaProvider
