@@ -1,6 +1,8 @@
 [user]
 	name = Tomáš Svoboda
 	email = tomassvoboda@posteo.net
+[github]
+	user = tomassvoboda
 [core]
 	editor = vim
 [color]
