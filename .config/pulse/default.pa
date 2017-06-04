@@ -1,0 +1,7 @@
+.include /etc/pulse/default.pa
+
+.ifexists module-switch-on-connect.so
+load-module module-switch-on-connect
+.endif
+
+set-default-sink "alsa_output.usb-NAD_Electronics_NAD_USB_Audio-00.analog-stereo"

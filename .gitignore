@@ -54,6 +54,11 @@
 /.config/beets/*
 !/.config/beets/config.yaml
 
+### pulseaudio configuration file
+!/.config/pulse
+/.config/pulse/*
+!/.config/pulse/default.pa
+
 ### mpd configuration file
 !/.config/mpd
 /.config/mpd/*
